@@ -1,13 +1,12 @@
-import token from 'slack-token'
+import token from 'token';
 
 function findIdForChannel(channelName) {
-  console.log("looking for", channelName)
 
   const url = `
     https://slack.com/api/channels.list?
     token=${token}`
 
-  return fetch(url, {method: "POST"})
+  return fetch(url, { method: "POST" })
     .then(res => res.json())
     .then(json => {
       let match

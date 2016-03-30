@@ -21,7 +21,7 @@
   </div>
 
   <div class="main">
-    <h1>Message History</h1>
+
   </div>
 
   <script type="text/javascript">
@@ -29,6 +29,14 @@
 
      const poster = document.querySelector(".send-post")
      new SendPostView(poster)
+
+    //  const SetTopicView = require(".set-topic-view")
+    //  const topic = document.querySelector(".set-topic")
+    //  new SetTopicView(topic)
+
+     const MessageHistoryView = require("message-history-view")
+     const history = document.querySelector(".main")
+     new MessageHistoryView(history);
   </script>
 </body>
 </html>
